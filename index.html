@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedex</title>
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <a href="https://github.com/Bayan2019/03_fedex/blob/main/03_fedex.ipynb"><img src="./pictures/logo.png" height="20px"></a>
+        <a href="./web_pages/1st_moment/1st_moment.html">1st Moment</a> |
+        <a href="./web_pages/2nd_moment/2nd_moment.html">2nd Moment</a> |
+        <a href="./web_pages/3rd_moment/3rd_moment.html">3rd Moment</a> |
+        <a href="./web_pages/4th_moment/4th_moment.html">4th Moment</a> |
+        <a href="./web_pages/boxplot_outliers/boxplot_outliers.html">Outliers</a> |
+        <a href="./web_pages/histograms/histograms.html">Histograms</a> |
+        <a href="./web_pages/qq_plots/qq_plots.html">QQ Plots</a> |
+        <a href="./web_pages/scatter_heatmap_plots/scatter_heatmap_plots.html">Scatter plots and heatmaps</a> |
+        <a href="./web_pages/scaled_qq_plots/scaled_qq_plots.html">Scaled QQ Plots</a> |
+        <a href="./web_pages/conclusion/conclusion.html">Conclusion</a>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">1 / 6</div>
+                <iframe src="./figures/line_date.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Number of Packages</h4>
+                <p>Number of deliveries has weekly seasonality</p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">2 / 6</div>
+                <iframe src="./figures/line_date_delivery.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Number of Packages classified by Delivery Status</h4>
+                <p>Here we observe much less explicit seasonal pattern, but seems like figure is assymetric</p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">3 / 6</div>
+                <iframe src="./figures/date_hist.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Histogram of Delivery Status along date</h4>
+                <p>In my personal opinion this data is irrelevant, but for the sake of thorouness 
+                    we will keep 'date' column.</p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">4 / 6</div>
+                <iframe src="./figures/date_hist_Month.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Histogram of Month</h4>
+                <!-- <p>Packages with small planned time of travel are tend to get lost.</p> -->
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">5 / 6</div>
+                <iframe src="./figures/date_hist_DayOfWeek.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Histogram of Day of Week</h4>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="plot">
+                <div class="numbertext">6 / 6</div>
+                <iframe src="./figures/date_hist_DayofMonth.html"></iframe>
+            </div>
+            <div class="text">
+                <h4>Histogram of Day of Month</h4>
+                <!-- <p>Packages with small distances are tend to get lost.</p> -->
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+</body>
+<script src="./script.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>

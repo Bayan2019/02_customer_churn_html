@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedex</title>
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="../../pictures/logo.png">
+    <link rel="stylesheet" href="./boxplot_outliers.css">
+</head>
+<body>
+    <nav>
+        <!-- <img src="./pictures/logo.png" height="20px"> -->
+        <a href="../1st_moment/1st_moment.html">1st Moment</a> |
+        <a href="../2nd_moment/2nd_moment.html">2nd Moment</a> |
+        <a href="../3rd_moment/3rd_moment.html">3rd Moment</a> |
+        <a href="../4th_moment/4th_moment.html">4th Moment</a> |
+        <!-- <a href="./web_pages/boxplot_outliers/boxplot_outliers.html">Outliers</a> | -->
+        <a href="../histograms/histograms.html">Histograms</a> |
+        <a href="../qq_plots/qq_plots.html">QQ Plots</a> |
+        <a href="../scatter_heatmap_plots/scatter_heatmap_plots.html">Scatter plots and heatmaps</a> |
+        <a href="../scaled_qq_plots/scaled_qq_plots.html">Scaled QQ Plots</a> |
+        <a href="../conclusion/conclusion.html">Conclusion</a>
+    </nav>
+    <div class="nav">
+        <a href="../../index.html"><img src="../../pictures/logo.png" height="30px"></a> 
+        <h1 class="plot-title">Outliers Analysis</h1>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">1 / 2</div>
+                <img src="../../figures/boxplot_numerical.png">
+            </div>
+            <div class="text">
+                <!-- <h3>Kurtosis: <strong>-0.217094</strong></h3>
+                <h4>Density of Number of Carriers</h4> -->
+                <p>Boxplots show outliers in: <strong>Carrier_Num</strong>, <strong>Planned_TimeofTravel</strong>,
+                     <strong>Distance</strong>, and <strong>Shipment_Delay</strong>.</p>
+
+                <p>We have big dataset, so we can simply delete all outliers.</p>
+
+                <p>Somehow by repeatedly deleting outliers we ended up with undelivered packages. This points out that
+                    we can cluster out all delivered packages by using just 4 variables.
+                </p>
+
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">2 / 2</div>
+                <img src="../../figures/boxplot_ordinal_categorical.png">
+            </div>
+            <div class="text">
+                <!-- <h3>Kurtosis: <strong>2.735711</strong></h3>
+                <h4>Density of Planned time of Travel</h4> -->
+                <p>As expected, there is no outliers in ordinal categorical variables.</p>
+            </div>
+        </div>
+        <a class="prev1" onclick="plusSlides(-1)">❮</a>
+        <a class="next1" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+    </div>
+</body>
+<script src="./boxplot_outliers.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>

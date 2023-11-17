@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedex</title>
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <link rel="icon" type="image/x-icon" href="../../pictures/logo.png">
+    <link rel="stylesheet" href="./histograms.css">
+</head>
+<body>
+    <nav>
+        <!-- <img src="./pictures/logo.png" height="20px"> -->
+        <a href="../1st_moment/1st_moment.html">1st Moment</a> |
+        <a href="../2nd_moment/2nd_moment.html">2nd Moment</a> |
+        <a href="../3rd_moment/3rd_moment.html">3rd Moment</a> |
+        <a href="../4th_moment/4th_moment.html">4th Moment</a> |
+        <a href="../boxplot_outliers/boxplot_outliers.html">Outliers</a> |
+        <!-- <a href="./web_pages/histograms/histograms.html">Histograms</a> | -->
+        <a href="../qq_plots/qq_plots.html">QQ Plots</a> |
+        <a href="../scatter_heatmap_plots/scatter_heatmap_plots.html">Scatter plots and heatmaps</a> |
+        <a href="../scaled_qq_plots/scaled_qq_plots.html">Scaled QQ Plots</a> |
+        <a href="../conclusion/conclusion.html">Conclusion</a>
+    </nav>
+    <div class="nav">
+        <a href="../../index.html"><img src="../../pictures/logo.png" height="30px"></a> 
+        <h1 class="plot-title">Histograms without outliers</h1>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">1 / 4</div>
+                <iframe src="../../figures/histogram2_Carrier_Num.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>0.820131</strong></h3>
+                <h3>Kurtosis: <strong>-0.364770</strong></h3>
+                <h4>Histogram of Number of Carriers</h4>
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">2 / 4</div>
+                <iframe src="../../figures/histogram2_Planned_TimeofTravel.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>0.643691</strong></h3>
+                <h3>Kurtosis: <strong>-0.273433</strong></h3>
+                <h4>Histogram of Planned time of Travel</h4>
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">3 / 4</div>
+                <iframe src="../../figures/histogram2_Distance.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>0.755805</strong></h3>
+                <h3>Kurtosis: <strong>-0.143132</strong></h3>
+                <h4>Histogram of Distance</h4>
+                <!-- <p>Packages with small planned time of travel are tend to get lost.</p> -->
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">4 / 4</div>
+                <iframe src="../../figures/histogram2_Shipment_Delay.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>1.062078</strong></h3>
+                <h3>Kurtosis: <strong>-0.198495</strong></h3>
+                <h4>Histogram of Shipment Delay</h4>
+                <!-- <p>Packages with small planned time of travel are tend to get lost.</p> -->
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">2 / 4</div>
+                <iframe src="../../figures/histogram2_Planned_Shipment_Time.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>-0.036854</strong></h3>
+                <h3>Kurtosis: <strong>-1.025583</strong></h3>
+                <h4>Histogram of Planned Time of Shipment</h4>
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">3 / 4</div>
+                <iframe src="../../figures/histogram2_Actual_Shipment_Time.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>-0.073994</strong></h3>
+                <h3>Kurtosis: <strong>-0.981716</strong></h3>
+                <h4>Histogram of Actual Time of Shipment</h4>
+                <!-- <p>Packages with small planned time of travel are tend to get lost.</p> -->
+            </div>
+        </div>
+        <div class="mySlides1 fade">
+            <div class="plot">
+                <div class="numbertext">7 / 7</div>
+                <iframe src="../../figures/histogram2_Planned_Delivery_Time.html"></iframe>
+            </div>
+            <div class="text">
+                <h3>Skeweness: <strong>-0.291876</strong></h3>
+                <h3>Kurtosis: <strong>-0.464222</strong></h3>
+                <h4>Histogram of Planned Time of Delivery</h4>
+                <!-- <p>Packages with small planned time of travel are tend to get lost.</p> -->
+            </div>
+        </div>
+        <a class="prev1" onclick="plusSlides(-1)">❮</a>
+        <a class="next1" onclick="plusSlides(1)">❯</a>
+    </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+        <span class="dot" onclick="currentSlide(7)"></span> 
+    </div>
+    <div class="notes">
+        <p>We have luxury of big dataset and limitation of 
+            restricted computing power. 
+        Therefore we can simply drop the outliers.</p>
+        <p>However in our case by dropping constantly outliers we ended up 
+            with only not delivered records.
+            It is probably because our data is unbalanced and 
+            undelivered packages dominate the dataset by shadowing 
+            the pattern of delivered packages.
+        </p>
+        <p>
+            Therefore we randomly were dropping undelivered packages 
+            to balance dataset. 
+        </p>
+        <p>Nonetheless we still ended with too big data, 
+            so we needed to sample again:</p>
+
+        <h4>3 604 175 
+            -(Removing Missing Values and Duplicates)-> 3 522 163 
+        -(Removing Outliers and Resampling)-> 1 130 315 
+        -(Sampling)-> 226 063 </h4>
+    </div>
+</body>
+<script src="./histograms.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</html>
