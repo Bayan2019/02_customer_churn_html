@@ -1,9 +1,10 @@
 body {
-    font-family: Verdana, 
-    sans-serif; 
-    margin:0;
-    background-color: #4d148c;
+    font-family: Verdana, sans-serif; 
+    margin: auto;
+    background-color: #c7f9cc;
+    align-items: center;
 }
+
 
 nav {
     padding: 10px 0px 10px 40px;
@@ -11,20 +12,14 @@ nav {
 }
 
 a {
-    color: aliceblue;
+    color: #38a3a5;
+    vertical-align: center;
 }
 
- /* .in-line {
-    display: inline;
+img {
+    margin-bottom: 0;
     padding-bottom: 0;
-    padding-top: 0;
-    margin: 0;
-}
-
-.plot {
-    width: 70%;
-    height: 370px;
-    display: inline-block;
+    vertical-align: center;
 }
 
 .annotation {
@@ -129,22 +124,23 @@ iframe {
     padding: 3px 40px;
     margin: 2px 5px;
     height: 30px;
+    align-items: center;
 }
 
 .dot {
     cursor: pointer;
     height: 12px;
     width: 12px;
-    margin: 0 5px;
-    padding: 0;
-    background-color: violet;
+    margin: auto;
+    align-items: center;
+    background-color:#386641;
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #8ac926;
 }
 
 @keyframes fade {
