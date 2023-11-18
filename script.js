@@ -2,14 +2,14 @@ let slideIndex = 1;
 showSlides1(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides1(slideIndex += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides1(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides1(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
