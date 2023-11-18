@@ -62,9 +62,9 @@ h1 {
 
 .plot {
     /* float: left; */
-    width: 100%;
+    width: 50%;
     height: 450px;
-    /* display: inline-block; */
+    display: inline-block;
 }
 
 .plot img {
@@ -95,8 +95,8 @@ h1 {
     /* width: 100%; */
     text-align: right;
     /* float: right; */
-    /* width: 25%; */
-    /* display: inline-block; */
+    width: 40%;
+    display: inline-block;
     height: 450px;
 }
 
