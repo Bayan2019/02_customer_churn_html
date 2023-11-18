@@ -1,8 +1,18 @@
+:root {
+    --body_background: #c7f9cc;
+    --a_color: #38a3a5;
+    --dot_background: #386641;
+    --dot_hover: #8ac926;
+    --text: orange;
+    --h1: pink;
+    --prev_next: red;
+  }
+
 body {
     font-family: Verdana, 
     sans-serif; 
     margin:0;
-    background-color: #4d148c;
+    background-color:var(--body_background);
 }
 
 nav {
@@ -11,7 +21,7 @@ nav {
 }
 
 a {
-    color: aliceblue;
+    color: var(--a_color);
 }
 
 .nav {
@@ -24,16 +34,26 @@ img {
 }
 
 h1 {
-    color: pink;
+    color: var(--h1);
     padding-left: 20px;
     padding-bottom: 0;
     margin-bottom: 0;
     display: inline-block;
 }
 
+.blocks {
+    width: 1190px;
+    height: 480px;
+    padding: 0 3px;
+    margin: auto;
+    border-radius: 10px; 
+}
+
 .table {
     margin: auto;
-    color: pink;
+    color: var(--text);
+    width: 50%;
+    display: inline-block;
 }
 
 table {
@@ -51,14 +71,21 @@ tr, td, th {
 }
 
 .image {
+    vertical-align: top;
     margin: auto;
+    width: 35%;
+    display: inline-block;
 }
 
-.image {
-    width: 90%
+
+.image img {
+    vertical-align: top;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
 }
-
-
 
 
 @keyframes fade {
