@@ -61,10 +61,10 @@ h1 {
 }
 
 .plot {
-    float: left;
-    width: 60%;
-    height: 450px;
-    display: inline-block;
+    /* float: left; */
+    /* width: 66%; */
+    height: 500px;
+    /* display: inline-block; */
 }
 
 .plot img {
@@ -92,7 +92,7 @@ iframe {
     padding-right: 5px;
     margin-left: 10px;
     margin-right: 3px; 
-    width: 35%;
+    /* width: 30%; */
     text-align: left;
     /* float: right; */
     /* width: 25%; */
